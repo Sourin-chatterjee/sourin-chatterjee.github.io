@@ -2,82 +2,367 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Sourin Chatterjee</title>
+  <meta name="description" content="Sourin Chatterjee — Ph.D. (Physics), IIT Madras. Research in quantum magnetism and computational physics." />
 
   <style>
-    body {
-      margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
-                   Roboto, Helvetica, Arial, sans-serif;
-      background-color: #ffffff;
-      color: #222;
-      line-height: 1.6;
+    :root{
+      --text:#1f2328;
+      --muted:#5b6572;
+      --line:#e6e8eb;
+      --link:#0969da;
+      --bg:#ffffff;
+      --chip:#f6f8fa;
     }
-
-    .container {
-      max-width: 700px;
-      margin: 80px auto;
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+      color:var(--text);
+      background:var(--bg);
+      line-height:1.65;
+    }
+    .container{
+      max-width: 920px;
+      margin: 56px auto;
       padding: 0 20px;
     }
-
-    h1 {
-      font-size: 2.5rem;
-      margin-bottom: 10px;
-      font-weight: 600;
+    header{
+      display:flex;
+      flex-wrap:wrap;
+      gap:16px;
+      align-items:flex-end;
+      justify-content:space-between;
+      padding-bottom:18px;
+      border-bottom:1px solid var(--line);
+      margin-bottom:18px;
+    }
+    .title h1{
+      margin:0;
+      font-size:2.15rem;
+      letter-spacing:-0.02em;
+      font-weight:650;
+    }
+    .title p{
+      margin:6px 0 0 0;
+      color:var(--muted);
     }
 
-    h2 {
-      font-size: 1.2rem;
-      font-weight: 400;
-      color: #555;
-      margin-bottom: 40px;
+    nav{
+      display:flex;
+      flex-wrap:wrap;
+      gap:14px;
+      margin-top:10px;
+      font-size:0.98rem;
+    }
+    nav a{
+      text-decoration:none;
+      color:var(--link);
+      font-weight:600;
+    }
+    nav a:hover{ text-decoration:underline; }
+
+    section{ padding-top:26px; }
+    h2{
+      margin:0 0 10px 0;
+      font-size:1.25rem;
+      font-weight:650;
+      padding-bottom:6px;
+      border-bottom:1px solid var(--line);
+    }
+    p{ margin: 10px 0; color:var(--text); }
+    .muted{ color:var(--muted); }
+
+    .grid{
+      display:grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap:18px;
+    }
+    @media (max-width: 860px){
+      .grid{ grid-template-columns:1fr; }
     }
 
-    p {
-      font-size: 1rem;
-      margin-bottom: 20px;
-      color: #333;
+    .card{
+      border:1px solid var(--line);
+      border-radius:12px;
+      padding:14px 14px;
+      background:#fff;
+    }
+    .chips{
+      display:flex;
+      flex-wrap:wrap;
+      gap:8px;
+      margin-top:10px;
+    }
+    .chip{
+      background:var(--chip);
+      border:1px solid var(--line);
+      color:var(--muted);
+      padding:6px 10px;
+      border-radius:999px;
+      font-size:0.92rem;
     }
 
-    a {
-      color: #0066cc;
-      text-decoration: none;
+    table{
+      width:100%;
+      border-collapse:collapse;
+      margin-top:10px;
+      font-size:0.98rem;
+    }
+    th, td{
+      text-align:left;
+      padding:10px 8px;
+      border-bottom:1px solid #f0f1f3;
+      vertical-align:top;
+    }
+    th{
+      color:var(--muted);
+      font-weight:650;
+      border-bottom:1px solid var(--line);
     }
 
-    a:hover {
-      text-decoration: underline;
-    }
+    a{ color:var(--link); text-decoration:none; }
+    a:hover{ text-decoration:underline; }
 
-    footer {
-      margin-top: 60px;
-      font-size: 0.9rem;
-      color: #777;
+    ul{ margin:10px 0 0 18px; }
+    li{ margin:7px 0; }
+
+    .small{ font-size:0.95rem; color:var(--muted); }
+    footer{
+      margin-top:46px;
+      padding-top:14px;
+      border-top:1px solid var(--line);
+      color:var(--muted);
+      font-size:0.92rem;
     }
+    .kicker{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      align-items:center;
+      color:var(--muted);
+      font-size:0.98rem;
+    }
+    .dot::before{ content:"•"; margin:0 10px 0 0; color:#c2c7cf; }
+    .links a{ margin-right:12px; }
   </style>
 </head>
 
 <body>
   <div class="container">
-    <h1>Sourin Chatterjee</h1>
-    <h2>Student · Developer</h2>
+    <header>
+      <div class="title">
+        <h1>Sourin Chatterjee</h1>
+        <p>Ph.D. (Physics) · Indian Institute of Technology Madras</p>
+        <div class="kicker">
+          <span class="dot">Quantum magnetism · Frustrated systems · Computational physics</span>
+        </div>
+      </div>
 
-    <p>
-      Hi, I’m Sourin. 
-    </p>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#bio">Biosketch</a>
+        <a href="#education">Education</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#activities">Activities</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
 
-    <p>
-      This website is a small space where I’ll share my work and projects.
-    </p>
+    <section id="home">
+      <div class="grid">
+        <div class="card">
+          <h2>Home</h2>
+          <p>
+            I am Sourin Chatterjee, a graduate student at IIT Madras with research experience in
+            quantum magnetism and computational/theoretical methods for complex many-body systems.
+          </p>
+          <p class="muted small">
+            This website is a simple, minimal profile with my education, selected projects, skills, and academic activities.
+          </p>
+          <div class="chips">
+            <span class="chip">Projective Symmetry Group (PSG)</span>
+            <span class="chip">Quantum Spin Liquids</span>
+            <span class="chip">PFFRG</span>
+            <span class="chip">Dynamical structure factors</span>
+          </div>
+        </div>
 
-    <p>
-      You can find me on
-      <a href="https://github.com/Sourin-chatterjee" target="_blank">GitHub</a>.
-    </p>
+        <div class="card">
+          <h2>Quick links</h2>
+          <p class="links">
+            <a href="https://github.com/Sourin-chatterjee" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://www.linkedin.com/in/sourin-chatterjee-617162121/" target="_blank" rel="noopener">LinkedIn</a>
+              <a href="https://scholar.google.com/citations?hl=en&pli=1&authuser=2&user=hLUGDeAAAAAJ" target="_blank" rel="noopener">Google Scholar</a>
+            <!-- Optional: add Google Scholar once you have it -->
+            <!-- <a href="https://scholar.google.com/..." target="_blank" rel="noopener">Google Scholar</a> -->
+          </p>
+
+          <p class="small">
+            Resume: <a href="resume.pdf">resume.pdf</a> <span class="muted">(upload a PDF with this name)</span>
+          </p>
+
+          <p class="small muted">
+            Email: <a href="mailto:sourinphysics95@gmail.com">sourinphysics95@gmail.com</a>
+            <!-- Optional: Phone -->
+            <!-- <br/>Phone: +91-7278054429 -->
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="bio">
+      <h2>Biosketch</h2>
+      <p>
+        I am pursuing Ph.D. in Physics at the Indian Institute of Technology Madras.
+        My research includes frustrated quantum magnetism and computational approaches to emergent phases,
+        with work involving PSG classification, mean-field Ansätze, and structure-factor calculations for
+        experimental comparison.
+      </p>
+      <p class="muted">
+        Interests: quantum spin liquids, frustrated lattices, renormalization-group approaches, computational modeling.
+      </p>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <table>
+        <tr>
+          <th>Program</th>
+          <th>Institution</th>
+          <th>Year</th>
+        </tr>
+        <tr>
+          <td>Ph.D. (Physics)</td>
+          <td>Indian Institute of Technology Madras</td>
+          <td>2019 — Present</td>
+        </tr>
+        <tr>
+          <td>M.Sc. (Physics)</td>
+          <td>University of Kalyani</td>
+          <td>2016 — 2018</td>
+        </tr>
+        <tr>
+          <td>B.Sc. (Physics)</td>
+          <td>RKMVC College, Rahara</td>
+          <td>2013 — 2016</td>
+        </tr>
+        <tr>
+          <td>Secondary School Leaving Certificate</td>
+          <td>Kendriya Vidyalaya No. 2, Kanchrapara</td>
+          <td>2013</td>
+        </tr>
+      </table>
+    </section>
+
+    <section id="projects">
+      <h2>Key Projects</h2>
+
+      <div class="card">
+        <p><strong>1) Semi-Dirac spin liquids and frustrated quantum magnetism on the trellis lattice</strong><br/>
+          <span class="muted">Ph.D. project · Guide: Prof. Yasir Iqbal · IIT Madras</span>
+        </p>
+        <ul>
+          <li>Performed fully symmetric PSG classification using Abrikosov fermions.</li>
+          <li>Identified 256 <em>Z₂</em> and 448 <em>U(1)</em> algebraic PSGs; reduced to symmetry-allowed mean-field Ansätze.</li>
+          <li>Studied emergent phases; computed static & dynamical structure factors for experimental comparison.</li>
+          <li>
+            Paper: <a href="https://arxiv.org/abs/2509.02663" target="_blank" rel="noopener">arXiv:2509.02663</a>
+          </li>
+        </ul>
+        <p class="small muted">Keywords: Quantum Spin Liquids (QSLs), Projective Symmetry Group (PSG)</p>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Coursework & Technical Skills</h2>
+
+      <div class="grid">
+        <div class="card">
+          <p><strong>Coursework</strong></p>
+          <p class="small muted"><strong>Ph.D. (IIT Madras):</strong> Foundations in Theoretical Physics, Foundations in Experimental Physics, Advanced Statistical Physics, Quantum Field Theory, Condensed Matter Physics I</p>
+          <p class="small muted"><strong>M.Sc. (University of Kalyani):</strong> Mathematical Methods, Classical Mechanics, Quantum Mechanics, Electrodynamics, Electronics, Atomic & Molecular Spectroscopy, Solid State Physics, Nuclear Physics, Elementary Particle Physics & field theory, Statistical Mechanics</p>
+          <p class="small muted"><strong>Lab:</strong> Numerical Methods and Computer Application</p>
+        </div>
+
+        <div class="card">
+          <p><strong>Technical Skills</strong></p>
+          <ul>
+            <li><strong>Programming:</strong> C, C++, Python, Fortran, Mathematica</li>
+            <li><strong>Operating systems:</strong> Linux, macOS</li>
+            <li><strong>Tools:</strong> LaTeX, VS Code, Inkscape, LibreOffice</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="activities">
+      <h2>Positions, Conferences & Awards</h2>
+
+      <div class="grid">
+        <div class="card">
+          <p><strong>Positions of Responsibility</strong></p>
+          <ul>
+            <li>Guest Lecturer, Ramakrishna Mission Vivekananda Centenary College (2018–19)</li>
+            <li>Coordinator, Career Development Cell Research, IITM (2023–24)</li>
+            <li>Teaching Assistant: PH1010 (Jul–Dec 2019, 2023)</li>
+            <li>Teaching Assistant: PH5120 (Jan–May 2020)</li>
+            <li>Teaching Assistant: Department Computer Facility, Physics Dept., IITM (2021–23)</li>
+            <li>Teaching Assistant: PH1020 (Jul–Dec 2024; Jan–May 2025)</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <p><strong>Conferences / Workshops</strong></p>
+          <ul>
+            <li>Oral: Evolution of Electronic Structure Theory and Experimental Realization (EESTER-2025), IIT Madras</li>
+            <li>Oral: StatPHYS Kolkata XIII (listed in 2026)</li>
+            <li>Poster: International Conference on Bose-Einstein Condensation… (ICBEC24), SN Bose Centre (2024)</li>
+            <li>Poster: Advanced School and Conference on Quantum Matter, ICTP Trieste (2025)</li>
+            <li>Poster: Fractionalization and Emergent Gauge Fields in Quantum Matter, ICTP Trieste (2023)</li>
+            <li>Poster: International Conference on Highly Frustrated Magnetism, IIT Madras (2024)</li>
+            <li>Workshop: Topical School on Advanced Condensed Matter Physics, IOP Bhubaneswar (2024)</li>
+            <li>Workshop: Physics of Quantum Matter School, NISER Bhubaneswar (2023)</li>
+          </ul>
+
+          <p style="margin-top:14px;"><strong>Achievements / Awards</strong></p>
+          <ul>
+            <li>ANRF International Travel Support (ICTP Trieste, 2025)</li>
+            <li>Qualified JEST-2019, GATE-2019</li>
+            <li>National Children’s Science Congress (State level, 2011)</li>
+            <li>National Science Olympiad: School Rank 1, City Rank 3</li>
+            <li>Debate: 3rd (KV Kankinara); English Extempore: 1st (KV Kankinara)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>
+        <strong>Email:</strong>
+        <a href="mailto:sourinphysics95@gmail.com">sourinphysics95@gmail.com</a>
+      </p>
+      <p>
+        <strong>Online:</strong>
+        <a href="https://www.linkedin.com/in/sourin-chatterjee-617162121/" target="_blank" rel="noopener">LinkedIn</a>,
+        <a href="https://github.com/Sourin-chatterjee" target="_blank" rel="noopener">GitHub</a>
+        <!-- Add Scholar later if you want -->
+      </p>
+      <p class="small muted">
+        Languages: English, Hindi, Bengali · Hobbies: Reading books, table tennis
+      </p>
+    </section>
 
     <footer>
-      © 2025 Sourin Chatterjee
+      © <span id="year"></span> Sourin Chatterjee
     </footer>
   </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
