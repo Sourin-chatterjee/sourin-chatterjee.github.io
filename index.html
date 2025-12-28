@@ -146,19 +146,47 @@
     }
     .dot::before{ content:"•"; margin:0 10px 0 0; color:#c2c7cf; }
     .links a{ margin-right:12px; }
+    /* Profile photo */
+.profile {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+.profile { flex: 1; min-width: 280px; }
+nav { justify-content: flex-end; }
+.profile img {
+  width: 96px;
+  height: 96px;
+  border-radius: 999px;
+  object-fit: cover;
+  border: 1px solid var(--line);
+  background: #fff;
+}
+
+@media (max-width: 520px){
+  .profile img {
+    width: 80px;
+    height: 80px;
+  }
+}
+
   </style>
 </head>
 
 <body>
   <div class="container">
-    <header>
-      <div class="title">
-        <h1>Sourin Chatterjee</h1>
-        <p>Ph.D. (Physics) · Indian Institute of Technology Madras</p>
-        <div class="kicker">
-          <span class="dot">Quantum magnetism · Frustrated systems · Computational physics</span>
-        </div>
+<header>
+  <div class="profile">
+    <img src="profile.jpg" alt="Sourin Chatterjee" />
+    <div class="title">
+      <h1>Sourin Chatterjee</h1>
+      <p>Ph.D. (Physics) · Indian Institute of Technology Madras</p>
+      <div class="kicker">
+        <span class="dot">Quantum magnetism · Frustrated systems · Computational physics</span>
       </div>
+    </div>
+  </div>
+
 
       <nav>
         <a href="#home">Home</a>
