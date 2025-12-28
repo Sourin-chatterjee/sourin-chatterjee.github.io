@@ -1,2 +1,1 @@
-# sourin.github.io
-My personal website
+This repository contains scripts for my personal website
