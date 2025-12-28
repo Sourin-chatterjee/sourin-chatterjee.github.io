@@ -147,28 +147,50 @@
     .dot::before{ content:"•"; margin:0 10px 0 0; color:#c2c7cf; }
     .links a{ margin-right:12px; }
     /* Profile photo */
-.profile {
-  display: flex;
-  gap: 16px;
-  align-items: center;
-}
-.profile { flex: 1; min-width: 280px; }
-nav { justify-content: flex-end; }
-.profile img {
-  width: 96px;
-  height: 96px;
-  border-radius: 999px;
-  object-fit: cover;
-  border: 1px solid var(--line);
-  background: #fff;
+/* Profile block */
+.profile{
+  display:flex;
+  gap:20px;
+  align-items:flex-start;
+  flex:1;
+  min-width:300px;
 }
 
-@media (max-width: 520px){
-  .profile img {
-    width: 80px;
-    height: 80px;
+/* Rectangular profile photo */
+.profile img{
+  width:140px;
+  height:180px;
+  object-fit:cover;
+  border-radius:6px;
+  border:1px solid var(--line);
+  background:#fff;
+}
+
+/* Keep name on one line */
+.title h1{
+  white-space:nowrap;
+}
+
+/* Align nav properly */
+nav{
+  display:flex;
+  flex-wrap:wrap;
+  gap:14px;
+  margin-top:10px;
+  font-size:0.98rem;
+  justify-content:flex-end;
+}
+
+@media (max-width:700px){
+  .profile{
+    align-items:center;
+  }
+  .profile img{
+    width:120px;
+    height:160px;
   }
 }
+
 
   </style>
 </head>
