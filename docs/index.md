@@ -17,11 +17,12 @@ My work combines analytical symmetry-based approaches, such as the Projective sy
 
 **Research interests**
 
-- Quantum Spin Liquids
-- Frustrated magnetic systems
-- Projective Symmetry Group (PSG)
-- Computational physics.
+- Quantum spin liquids  
+- Frustrated quantum magnetism  
+- Projective symmetry group (PSG) and symmetry-based classification  
+- Pseudofermion functional renormalization group (pf-FRG)
 
+  
 </div>
 </div>
 
