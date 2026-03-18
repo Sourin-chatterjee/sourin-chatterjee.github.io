@@ -20,7 +20,7 @@ My work combines analytical symmetry-based approaches, such as the Projective sy
 - Quantum spin liquids  
 - Frustrated quantum magnetism  
 - Projective symmetry group (PSG) and symmetry-based classification  
-- pseudo - fermion functional renormalization group (pf-FRG)
+- pseudo-fermion functional renormalization group (pf-FRG)
 
   
 </div>
