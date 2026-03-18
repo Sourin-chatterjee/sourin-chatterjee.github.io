@@ -11,14 +11,15 @@
 **Ph.D. (Physics)**  
 Indian Institute of Technology Madras
 
-I am a Ph.D. student at IIT Madras working on **frustrated quantum magnetism** and **computational many-body physics**.  
-My research focuses on projective symmetry groups, quantum spin liquids, and dynamical structure factors relevant to experiments.
+I am a Ph.D. student at IIT Madras working on frustrated quantum magnetism and computational many-body physics.  
+My work combines symmetry-based approaches, such as the Projective symmetry group (PSG) formalism, with nonperturbative numerical methods like the pseudo-fermion functional renormalization group (pf-FRG) method to study candidate spin liquid states.
 
 **Research interests**
+
 - Quantum Spin Liquids
 - Frustrated magnetic systems
 - Projective Symmetry Group (PSG)
-- Computational physics
+- Computational physics.
 
 </div>
 </div>
