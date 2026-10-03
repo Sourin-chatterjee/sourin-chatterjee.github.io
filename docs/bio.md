@@ -1,4 +1,3 @@
-## Biosketch
 
 I have completed my Ph.D. in Physics at the Indian Institute of Technology Madras, where I worked on frustrated quantum magnetism.
 
