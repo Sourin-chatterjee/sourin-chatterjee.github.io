@@ -11,7 +11,7 @@
 **Ph.D. (Physics)**  
 Indian Institute of Technology Madras
 
-I am a Ph.D. student at IIT Madras working on frustrated quantum magnetism.
+I have a Ph.D. in Physics from the Indian Institute of Technology Madras, where I worked on frustrated quantum magnetism.
 
 My work combines analytical symmetry-based approaches, such as the Projective symmetry group (PSG) formalism, and numerical methods like the pseudo-fermion functional renormalization group (pf-FRG) method to study candidate spin liquid states.
 
